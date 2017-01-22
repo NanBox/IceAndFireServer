@@ -110,7 +110,7 @@ public class Content2Json {
 
     private static void initLannister() {
         List<Content> contentList = new ArrayList<>();
-        String lannisterUrl = "/person/Tully";
+        String lannisterUrl = "/person/Lannister";
         contentList.add(new Content(
                 "Tywin_Lannister",
                 1,
