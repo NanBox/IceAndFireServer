@@ -2,7 +2,6 @@ package com.southernbox.iceandfireserver.object2json;
 
 import com.google.gson.Gson;
 import com.southernbox.iceandfireserver.entity.Content;
-import com.southernbox.iceandfireserver.entity.ContentJson;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -17,9 +16,8 @@ public class Content2Json {
     }
 
     private static void outPutJson(List<Content> list, String url) {
-        ContentJson optionJson = new ContentJson(list);
         Gson gson = new Gson();
-        String jsonString = gson.toJson(optionJson);
+        String jsonString = gson.toJson(list);
         File optionJsonFile = new File(url);
         try {
             OutputStreamWriter osw = new OutputStreamWriter(

@@ -2,7 +2,6 @@ package com.southernbox.iceandfireserver.object2json;
 
 import com.google.gson.Gson;
 import com.southernbox.iceandfireserver.entity.Option;
-import com.southernbox.iceandfireserver.entity.OptionJson;
 import com.southernbox.iceandfireserver.entity.SecondOption;
 
 import java.io.*;
@@ -22,9 +21,8 @@ public class Option2Json {
         initEra();
         initGeography2();
         initOption();
-        OptionJson optionJson = new OptionJson(optionList);
         Gson gson = new Gson();
-        String jsonString = gson.toJson(optionJson);
+        String jsonString = gson.toJson(optionList);
         File optionJsonFile = new File("../IceAndFireServer/option.json");
         //File optionJsonFile = new File("G:/apache-tomcat-6.0.29/webapps/IceAndFire/option.json");
         try {
