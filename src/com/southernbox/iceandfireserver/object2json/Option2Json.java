@@ -42,7 +42,7 @@ public class Option2Json {
 
     private static void initFamily() {
         familyList.add(new SecondOption(10100, 1, "史塔克", "/person/Stark/Stark.json"));
-        familyList.add(new SecondOption(10200, 1, "兰尼斯特", ""));
+        familyList.add(new SecondOption(10200, 1, "兰尼斯特", "/person/Lannister/Lannister.json"));
         familyList.add(new SecondOption(10300, 1, "拜拉席恩", ""));
         familyList.add(new SecondOption(10400, 1, "坦格利安", ""));
         familyList.add(new SecondOption(10500, 1, "徒利", "/person/Tully/Tully.json"));
