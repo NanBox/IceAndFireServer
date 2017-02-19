@@ -9,7 +9,7 @@ public class ContentDTO {
     private String intro;
     private String html;
 
-    public ContentDTO(String id, String firstType, String secondType, String pic, String name,
+    public ContentDTO(String id, String firstType, String secondType, String img, String name,
                       String intro, String html) {
         this.id = id;
         this.firstType = firstType;
