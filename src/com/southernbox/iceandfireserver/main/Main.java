@@ -173,52 +173,52 @@ public class Main {
         //城堡数据
         tabList.add(new TabDTO(
                 40100,
-                "history",
+                "castle",
                 "",
                 "北境"));
         tabList.add(new TabDTO(
                 40200,
-                "history",
+                "castle",
                 "",
                 "塞外"));
         tabList.add(new TabDTO(
                 40300,
-                "history",
+                "castle",
                 "",
                 "河间地"));
         tabList.add(new TabDTO(
                 40400,
-                "history",
+                "castle",
                 "",
                 "谷地"));
         tabList.add(new TabDTO(
                 40500,
-                "history",
+                "castle",
                 "",
                 "铁群岛"));
         tabList.add(new TabDTO(
                 40600,
-                "history",
+                "castle",
                 "",
                 "西境"));
         tabList.add(new TabDTO(
                 40700,
-                "history",
+                "castle",
                 "",
                 "河湾地"));
         tabList.add(new TabDTO(
                 40800,
-                "history",
+                "castle",
                 "",
                 "风暴地"));
         tabList.add(new TabDTO(
                 40900,
-                "history",
+                "castle",
                 "",
                 "多恩"));
         tabList.add(new TabDTO(
                 41000,
-                "history",
+                "castle",
                 "",
                 "其他"));
     }
