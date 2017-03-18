@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  * Created by SouthernBox on 2017/2/19.
- * 生产json文件主类
+ * 生产 json 文件
  */
 public class Main {
 
@@ -22,6 +22,9 @@ public class Main {
         content2Json();
     }
 
+    /**
+     * 将 tab 数据转换为 json
+     */
     private static void tab2Json() {
         initTabData();
         Gson gson = new Gson();
@@ -39,6 +42,9 @@ public class Main {
         }
     }
 
+    /**
+     * 将 content 数据转换为 json
+     */
     private static void content2Json() {
         initContentData();
         Gson gson = new Gson();
@@ -56,8 +62,20 @@ public class Main {
         }
     }
 
+    /**
+     * 初始化 tab 数据
+     */
     private static void initTabData() {
-        //人物数据
+        initPersonTabData();
+        initHouseTabData();
+        initHistoryTabData();
+        initCastleTabData();
+    }
+
+    /**
+     * 初始化人物 tab 数据
+     */
+    private static void initPersonTabData() {
         tabList.add(new TabDTO(
                 10100,
                 "person",
@@ -103,213 +121,276 @@ public class Main {
                 "person",
                 "Others",
                 "其他"));
-        //家族数据
+    }
+
+    /**
+     * 初始化家族 tab 数据
+     */
+    private static void initHouseTabData() {
         tabList.add(new TabDTO(
                 20100,
                 "house",
-                "",
+                "The North",
                 "北境"));
         tabList.add(new TabDTO(
                 20200,
                 "house",
-                "",
+                "Beyond the Wall",
                 "塞外"));
         tabList.add(new TabDTO(
                 20300,
                 "house",
-                "",
+                "Riverlands",
                 "河间地"));
         tabList.add(new TabDTO(
                 20400,
                 "house",
-                "",
+                "Vale",
                 "谷地"));
         tabList.add(new TabDTO(
                 20500,
                 "house",
-                "",
+                "Iron Islands",
                 "铁群岛"));
         tabList.add(new TabDTO(
                 20600,
                 "house",
-                "",
+                "Westerlands",
                 "西境"));
         tabList.add(new TabDTO(
                 20700,
                 "house",
-                "",
+                "Reach",
                 "河湾地"));
         tabList.add(new TabDTO(
                 20800,
                 "house",
-                "",
+                "Stormlands",
                 "风暴地"));
         tabList.add(new TabDTO(
                 20900,
                 "house",
-                "",
+                "Dorne",
                 "多恩"));
         tabList.add(new TabDTO(
                 21000,
                 "house",
-                "",
+                "Others",
                 "其他"));
-        //历史数据
+    }
+
+    /**
+     * 初始化历史 tab 数据
+     */
+    private static void initHistoryTabData() {
         tabList.add(new TabDTO(
                 30100,
                 "history",
-                "",
+                "Ancient History",
                 "古代历史"));
         tabList.add(new TabDTO(
                 30200,
                 "history",
-                "",
+                "Targaryen Dynasty",
                 "坦格利安王朝"));
         tabList.add(new TabDTO(
                 30300,
                 "history",
-                "",
+                "Baratheon Dynasty",
                 "拜拉席恩王朝"));
-        //城堡数据
+    }
+
+    /**
+     * 初始化城堡 tab 数据
+     */
+    private static void initCastleTabData() {
         tabList.add(new TabDTO(
                 40100,
                 "castle",
-                "",
+                "The North",
                 "北境"));
         tabList.add(new TabDTO(
                 40200,
                 "castle",
-                "",
+                "Beyond the Wall",
                 "塞外"));
         tabList.add(new TabDTO(
                 40300,
                 "castle",
-                "",
+                "Riverlands",
                 "河间地"));
         tabList.add(new TabDTO(
                 40400,
                 "castle",
-                "",
+                "Vale",
                 "谷地"));
         tabList.add(new TabDTO(
                 40500,
                 "castle",
-                "",
+                "Iron Islands",
                 "铁群岛"));
         tabList.add(new TabDTO(
                 40600,
                 "castle",
-                "",
+                "Westerlands",
                 "西境"));
         tabList.add(new TabDTO(
                 40700,
                 "castle",
-                "",
+                "Reach",
                 "河湾地"));
         tabList.add(new TabDTO(
                 40800,
                 "castle",
-                "",
+                "Stormlands",
                 "风暴地"));
         tabList.add(new TabDTO(
                 40900,
                 "castle",
-                "",
+                "Dorne",
                 "多恩"));
         tabList.add(new TabDTO(
                 41000,
                 "castle",
-                "",
+                "Others",
                 "其他"));
     }
 
+    /**
+     * 初始化 Content 数据
+     */
     private static void initContentData() {
-        //人物-史塔克
-        String starkUrl = "/person/Stark";
+        initPersonContentData();
+        initHouseContentData();
+    }
+
+    /**
+     * 初始化人物数据
+     */
+    private static void initPersonContentData() {
+        initStarkPersonContentData();
+        initLannisterPersonContentData();
+        initTullyPersonContentData();
+    }
+
+    private static void initHouseContentData() {
+        initNorthHouseContentData();
+    }
+
+    /**
+     * 初始化史塔克人物数据
+     */
+    private static void initStarkPersonContentData() {
+        String starkUrl = "/person/Stark/";
         contentList.add(new ContentDTO(
                 "Eddard_Stark",
                 "person",
                 "Stark",
-                starkUrl + "/Eddard_Stark/Eddard_Stark.png",
+                starkUrl + "Eddard_Stark.png",
                 "艾德·史塔克",
                 "临冬城公爵、北境守护",
-                starkUrl + "/Eddard_Stark/Eddard_Stark.html"));
-        contentList.add(new ContentDTO(
-                "Catelyn_Tully",
-                "person",
-                "Stark",
-                "/person/Tully/Catelyn_Tully/Catelyn_Tully.png",
-                "凯特琳·徒利",
-                "临冬城夫人、“猫姨”",
-                "/person/Tully/Catelyn_Tully/Catelyn_Tully.html"));
+                starkUrl + "Eddard_Stark.html"));
         contentList.add(new ContentDTO(
                 "Robb_Stark",
                 "person",
                 "Stark",
-                starkUrl + "/Robb_Stark/Robb_Stark.png",
+                starkUrl + "Robb_Stark.png",
                 "罗伯·史塔克",
                 "临冬城继承人、“少狼主”",
-                starkUrl + "/Robb_Stark/Robb_Stark.html"));
+                starkUrl + "Robb_Stark.html"));
         contentList.add(new ContentDTO(
                 "Jon_Snow",
                 "person",
                 "Stark",
-                starkUrl + "/Jon_Snow/Jon_Snow.png",
+                starkUrl + "Jon_Snow.png",
                 "琼恩·雪诺",
                 "“临冬城的私生子“、“囧雪”",
-                starkUrl + "/Jon_Snow/Jon_Snow.html"));
+                starkUrl + "Jon_Snow.html"));
         contentList.add(new ContentDTO(
                 "Sansa_Stark",
                 "person",
                 "Stark",
-                starkUrl + "/Sansa_Stark/Sansa_Stark.png",
+                starkUrl + "Sansa_Stark.png",
                 "珊莎·史塔克",
                 "“三傻”",
-                starkUrl + "/Sansa_Stark/Sansa_Stark.html"));
+                starkUrl + "Sansa_Stark.html"));
         contentList.add(new ContentDTO(
                 "Arya_Stark",
                 "person",
                 "Stark",
-                starkUrl + "/Arya_Stark/Arya_Stark.png",
+                starkUrl + "Arya_Stark.png",
                 "艾莉亚·史塔克",
                 "“二丫”",
-                starkUrl + "/Arya_Stark/Arya_Stark.html"));
+                starkUrl + "Arya_Stark.html"));
         contentList.add(new ContentDTO(
                 "Brandon_Stark",
                 "person",
                 "Stark",
-                starkUrl + "/Brandon_Stark/Brandon_Stark.png",
+                starkUrl + "Brandon_Stark.png",
                 "布兰登·史塔克",
                 "“布兰”",
-                starkUrl + "/Brandon_Stark/Brandon_Stark.html"));
+                starkUrl + "Brandon_Stark.html"));
         contentList.add(new ContentDTO(
                 "Rickon_Stark",
                 "person",
                 "Stark",
-                starkUrl + "/Rickon_Stark/Rickon_Stark.png",
+                starkUrl + "Rickon_Stark.png",
                 "瑞肯·史塔克",
                 "“核桃大帝”",
-                starkUrl + "/Rickon_Stark/Rickon_Stark.html"));
-        //人物-徒利
-        String tullyUrl = "/person/Tully";
-        contentList.add(new ContentDTO(
-                "Catelyn_Tully",
-                "person",
-                "Tully",
-                tullyUrl + "/Catelyn_Tully/Catelyn_Tully.png",
-                "凯特琳·徒利",
-                "临冬城夫人",
-                tullyUrl + "/Catelyn_Tully/Catelyn_Tully.html"));
-        //人物-兰尼斯特
-        String lannisterUrl = "/person/Lannister";
+                starkUrl + "Rickon_Stark.html"));
+    }
+
+    /**
+     * 初始化兰尼斯特人物数据
+     */
+    private static void initLannisterPersonContentData() {
+        String lannisterUrl = "/person/Lannister/";
         contentList.add(new ContentDTO(
                 "Tywin_Lannister",
                 "person",
                 "Lannister",
-                lannisterUrl + "/Tywin_Lannister/Tywin_Lannister.png",
+                lannisterUrl + "Tywin_Lannister.png",
                 "泰温·兰尼斯特",
                 "凯岩城公爵、兰尼斯港之盾、西境守护",
-                lannisterUrl + "/Tywin_Lannister/Tywin_Lannister.html"));
+                lannisterUrl + "Tywin_Lannister.html"));
+        contentList.add(new ContentDTO(
+                "Tyrion_Lannister",
+                "person",
+                "Lannister",
+                lannisterUrl + "Tyrion_Lannister.png",
+                "提利昂·兰尼斯特",
+                "小恶魔",
+                lannisterUrl + "Tyrion_Lannister.html"));
+    }
+
+    /**
+     * 初始化徒利人物数据
+     */
+    private static void initTullyPersonContentData() {
+        String tullyUrl = "/person/Tully/";
+        contentList.add(new ContentDTO(
+                "Catelyn_Tully",
+                "person",
+                "Tully",
+                tullyUrl + "Catelyn_Tully.png",
+                "凯特琳·徒利",
+                "临冬城夫人",
+                tullyUrl + "Catelyn_Tully.html"));
+    }
+
+    /**
+     * 初始化北境家族数据
+     */
+    private static void initNorthHouseContentData() {
+        String northUrl = "/house/The North/";
+        contentList.add(new ContentDTO(
+                "House_Stark",
+                "house",
+                "The North",
+                northUrl + "House_Stark.png",
+                "史塔克家族",
+                "",
+                northUrl + "House_Stark.html"));
     }
 
 }
