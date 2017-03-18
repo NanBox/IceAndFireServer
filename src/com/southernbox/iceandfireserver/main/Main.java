@@ -130,12 +130,12 @@ public class Main {
         tabList.add(new TabDTO(
                 20100,
                 "house",
-                "The North",
+                "The_North",
                 "北境"));
         tabList.add(new TabDTO(
                 20200,
                 "house",
-                "Beyond the Wall",
+                "Beyond_the_Wall",
                 "塞外"));
         tabList.add(new TabDTO(
                 20300,
@@ -150,7 +150,7 @@ public class Main {
         tabList.add(new TabDTO(
                 20500,
                 "house",
-                "Iron Islands",
+                "Iron_Islands",
                 "铁群岛"));
         tabList.add(new TabDTO(
                 20600,
@@ -186,17 +186,17 @@ public class Main {
         tabList.add(new TabDTO(
                 30100,
                 "history",
-                "Ancient History",
+                "Ancient_History",
                 "古代历史"));
         tabList.add(new TabDTO(
                 30200,
                 "history",
-                "Targaryen Dynasty",
+                "Targaryen_Dynasty",
                 "坦格利安王朝"));
         tabList.add(new TabDTO(
                 30300,
                 "history",
-                "Baratheon Dynasty",
+                "Baratheon_Dynasty",
                 "拜拉席恩王朝"));
     }
 
@@ -207,12 +207,12 @@ public class Main {
         tabList.add(new TabDTO(
                 40100,
                 "castle",
-                "The North",
+                "The_North",
                 "北境"));
         tabList.add(new TabDTO(
                 40200,
                 "castle",
-                "Beyond the Wall",
+                "Beyond_the_Wall",
                 "塞外"));
         tabList.add(new TabDTO(
                 40300,
@@ -227,7 +227,7 @@ public class Main {
         tabList.add(new TabDTO(
                 40500,
                 "castle",
-                "Iron Islands",
+                "Iron_Islands",
                 "铁群岛"));
         tabList.add(new TabDTO(
                 40600,
@@ -382,11 +382,11 @@ public class Main {
      * 初始化北境家族数据
      */
     private static void initNorthHouseContentData() {
-        String northUrl = "/house/The North/";
+        String northUrl = "/house/The_North/";
         contentList.add(new ContentDTO(
                 "House_Stark",
                 "house",
-                "The North",
+                "The_North",
                 northUrl + "House_Stark.png",
                 "史塔克家族",
                 "",
