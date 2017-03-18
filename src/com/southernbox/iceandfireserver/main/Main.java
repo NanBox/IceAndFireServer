@@ -359,7 +359,7 @@ public class Main {
                 "Lannister",
                 lannisterUrl + "Tyrion_Lannister.png",
                 "提利昂·兰尼斯特",
-                "小恶魔",
+                "“小恶魔”",
                 lannisterUrl + "Tyrion_Lannister.html"));
     }
 
