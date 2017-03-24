@@ -270,11 +270,13 @@ public class Main {
     private static void initPersonContentData() {
         initStarkPersonContentData();
         initLannisterPersonContentData();
+        initBaratheonPersonContentData();
         initTullyPersonContentData();
     }
 
     private static void initHouseContentData() {
         initNorthHouseContentData();
+        initWesterlandsHouseContentData();
     }
 
     /**
@@ -354,6 +356,22 @@ public class Main {
                 "凯岩城公爵、兰尼斯港之盾、西境守护",
                 lannisterUrl + "Tywin_Lannister.html"));
         contentList.add(new ContentDTO(
+                "Jaime_Lannister",
+                "person",
+                "Lannister",
+                lannisterUrl + "Jaime_Lannister.png",
+                "詹姆·兰尼斯特",
+                "“弑君者”",
+                lannisterUrl + "Jaime_Lannister.html"));
+        contentList.add(new ContentDTO(
+                "Cersei_Lannister",
+                "person",
+                "Lannister",
+                lannisterUrl + "Cersei_Lannister.png",
+                "瑟曦·兰尼斯特",
+                "",
+                lannisterUrl + "Cersei_Lannister.html"));
+        contentList.add(new ContentDTO(
                 "Tyrion_Lannister",
                 "person",
                 "Lannister",
@@ -361,6 +379,46 @@ public class Main {
                 "提利昂·兰尼斯特",
                 "“小恶魔”",
                 lannisterUrl + "Tyrion_Lannister.html"));
+        contentList.add(new ContentDTO(
+                "Kevan_Lannister",
+                "person",
+                "Lannister",
+                lannisterUrl + "Kevan_Lannister.png",
+                "凯冯·兰尼斯特",
+                "",
+                lannisterUrl + "Kevan_Lannister.html"));
+        contentList.add(new ContentDTO(
+                "Lancel_Lannister",
+                "person",
+                "Lannister",
+                lannisterUrl + "Lancel_Lannister.png",
+                "蓝赛尔·兰尼斯特",
+                "",
+                lannisterUrl + "Lancel_Lannister.html"));
+    }
+
+
+    /**
+     * 初始化拜拉席恩人物数据
+     */
+    private static void initBaratheonPersonContentData() {
+        String baratheonUrl = "/person/Baratheon/";
+        contentList.add(new ContentDTO(
+                "Robert_Baratheon",
+                "person",
+                "Baratheon",
+                baratheonUrl + "Robert_Baratheon.png",
+                "劳勃·拜拉席恩",
+                "七国国王、全境守护、风息堡公爵",
+                baratheonUrl + "Robert_Baratheon.html"));
+        contentList.add(new ContentDTO(
+                "Joffrey_Baratheon",
+                "person",
+                "Baratheon",
+                baratheonUrl + "Joffrey_Baratheon.png",
+                "乔佛里·拜拉席恩",
+                "",
+                baratheonUrl + "Joffrey_Baratheon.html"));
     }
 
     /**
@@ -391,6 +449,21 @@ public class Main {
                 "史塔克家族",
                 "",
                 northUrl + "House_Stark.html"));
+    }
+
+    /**
+     * 初始化西境家族数据
+     */
+    private static void initWesterlandsHouseContentData() {
+        String westerlandsUrl = "/house/Westerlands/";
+        contentList.add(new ContentDTO(
+                "House_Lannister",
+                "house",
+                "Westerlands",
+                westerlandsUrl + "House_Lannister.png",
+                "兰尼斯特家族",
+                "",
+                westerlandsUrl + "House_Lannister.html"));
     }
 
 }
