@@ -283,7 +283,7 @@ public class Main {
      * 初始化史塔克人物数据
      */
     private static void initStarkPersonContentData() {
-        String starkUrl = "/person/Stark/";
+        String starkUrl = "person/Stark/";
         contentList.add(new ContentDTO(
                 "Eddard_Stark",
                 "person",
@@ -346,7 +346,7 @@ public class Main {
      * 初始化兰尼斯特人物数据
      */
     private static void initLannisterPersonContentData() {
-        String lannisterUrl = "/person/Lannister/";
+        String lannisterUrl = "person/Lannister/";
         contentList.add(new ContentDTO(
                 "Tywin_Lannister",
                 "person",
@@ -402,7 +402,7 @@ public class Main {
      * 初始化拜拉席恩人物数据
      */
     private static void initBaratheonPersonContentData() {
-        String baratheonUrl = "/person/Baratheon/";
+        String baratheonUrl = "person/Baratheon/";
         contentList.add(new ContentDTO(
                 "Robert_Baratheon",
                 "person",
@@ -425,7 +425,7 @@ public class Main {
      * 初始化徒利人物数据
      */
     private static void initTullyPersonContentData() {
-        String tullyUrl = "/person/Tully/";
+        String tullyUrl = "person/Tully/";
         contentList.add(new ContentDTO(
                 "Catelyn_Tully",
                 "person",
@@ -440,7 +440,7 @@ public class Main {
      * 初始化北境家族数据
      */
     private static void initNorthHouseContentData() {
-        String northUrl = "/house/The_North/";
+        String northUrl = "house/The_North/";
         contentList.add(new ContentDTO(
                 "House_Stark",
                 "house",
@@ -455,7 +455,7 @@ public class Main {
      * 初始化西境家族数据
      */
     private static void initWesterlandsHouseContentData() {
-        String westerlandsUrl = "/house/Westerlands/";
+        String westerlandsUrl = "house/Westerlands/";
         contentList.add(new ContentDTO(
                 "House_Lannister",
                 "house",
