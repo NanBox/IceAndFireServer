@@ -29,10 +29,10 @@ public class Main {
         initTabData();
         Gson gson = new Gson();
         String jsonString = gson.toJson(tabList);
-        File optionJsonFile = new File("../IceAndFireServer/tab.json");
+        File tabJsonFile = new File("../IceAndFireServer/tab.json");
         try {
             OutputStreamWriter osw = new OutputStreamWriter(
-                    new FileOutputStream(optionJsonFile), "UTF-8");
+                    new FileOutputStream(tabJsonFile), "UTF-8");
             BufferedWriter bw = new BufferedWriter(osw);
             bw.write(jsonString, 0, jsonString.length());
             bw.flush();
@@ -49,10 +49,10 @@ public class Main {
         initContentData();
         Gson gson = new Gson();
         String jsonString = gson.toJson(contentList);
-        File optionJsonFile = new File("../IceAndFireServer/content.json");
+        File contentJsonFile = new File("../IceAndFireServer/content.json");
         try {
             OutputStreamWriter osw = new OutputStreamWriter(
-                    new FileOutputStream(optionJsonFile), "UTF-8");
+                    new FileOutputStream(contentJsonFile), "UTF-8");
             BufferedWriter bw = new BufferedWriter(osw);
             bw.write(jsonString, 0, jsonString.length());
             bw.flush();

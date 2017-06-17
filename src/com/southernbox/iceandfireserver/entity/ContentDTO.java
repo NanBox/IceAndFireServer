@@ -1,6 +1,11 @@
 package com.southernbox.iceandfireserver.entity;
 
+/**
+ * Created by SouthernBox on 2017/2/19.
+ * 内容
+ */
 public class ContentDTO {
+
     private String id;
     private String firstType;
     private String secondType;
