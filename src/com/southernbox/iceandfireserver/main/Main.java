@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  * Created by SouthernBox on 2017/2/19.
- * 生产 json 文件
+ * 生成 json 文件
  */
 public class Main {
 
