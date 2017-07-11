@@ -75,6 +75,10 @@ public class WikiData {
                 "徒利家族"));
         tabList.add(new WikiTab(
                 "person",
+                "弗雷",
+                "弗雷家族"));
+        tabList.add(new WikiTab(
+                "person",
                 "提利尔",
                 "提利尔家族"));
         tabList.add(new WikiTab(
@@ -85,6 +89,10 @@ public class WikiData {
                 "person",
                 "马泰尔",
                 "马泰尔家族"));
+        tabList.add(new WikiTab(
+                "person",
+                "葛雷乔伊",
+                "葛雷乔伊家族"));
     }
 
     /**
@@ -93,42 +101,50 @@ public class WikiData {
     private static void initHouseTabData() {
         tabList.add(new WikiTab(
                 "house",
+                "贵族",
+                "贵族家族"));
+        tabList.add(new WikiTab(
+                "house",
                 "北境",
                 "北境家族"));
-        tabList.add(new WikiTab(
-                "house",
-                "河间地",
-                "河间地家族"));
-        tabList.add(new WikiTab(
-                "house",
-                "谷地",
-                "谷地家族"));
-        tabList.add(new WikiTab(
-                "house",
-                "铁群岛",
-                "铁群岛家族"));
         tabList.add(new WikiTab(
                 "house",
                 "西境",
                 "西境家族"));
         tabList.add(new WikiTab(
                 "house",
-                "河湾地",
-                "河湾地家族"));
-        tabList.add(new WikiTab(
-                "house",
                 "风暴地",
                 "风暴地家族"));
         tabList.add(new WikiTab(
                 "house",
+                "河间地",
+                "河间地家族"));
+        tabList.add(new WikiTab(
+                "house",
+                "河湾地",
+                "河湾地家族"));
+        tabList.add(new WikiTab(
+                "house",
+                "谷地",
+                "谷地家族"));
+        tabList.add(new WikiTab(
+                "house",
                 "多恩",
                 "多恩家族"));
+        tabList.add(new WikiTab(
+                "house",
+                "铁群岛",
+                "铁群岛家族"));
     }
 
     /**
      * 初始化历史 tab 数据
      */
     private static void initHistoryTabData() {
+        tabList.add(new WikiTab(
+                "history",
+                "文化",
+                "文化"));
         tabList.add(new WikiTab(
                 "history",
                 "事件",
@@ -143,12 +159,12 @@ public class WikiData {
                 "战役"));
         tabList.add(new WikiTab(
                 "history",
-                "书籍",
-                "书籍"));
-        tabList.add(new WikiTab(
-                "history",
                 "术语",
                 "术语"));
+        tabList.add(new WikiTab(
+                "history",
+                "理论推测",
+                "理论推测"));
     }
 
     /**
@@ -157,40 +173,52 @@ public class WikiData {
     private static void initCastleTabData() {
         tabList.add(new WikiTab(
                 "site",
+                "王领",
+                "王领地点"));
+        tabList.add(new WikiTab(
+                "site",
                 "北境",
                 "北境地点"));
-        tabList.add(new WikiTab(
-                "site",
-                "河间地",
-                "河间地地点"));
-        tabList.add(new WikiTab(
-                "site",
-                "谷地",
-                "谷地地点"));
-        tabList.add(new WikiTab(
-                "site",
-                "铁群岛",
-                "铁群岛地点"));
         tabList.add(new WikiTab(
                 "site",
                 "西境",
                 "西境地点"));
         tabList.add(new WikiTab(
                 "site",
+                "风暴地",
+                "风暴地地点"));
+        tabList.add(new WikiTab(
+                "site",
+                "河间地",
+                "河间地地点"));
+        tabList.add(new WikiTab(
+                "site",
                 "河湾地",
                 "河湾地地点"));
         tabList.add(new WikiTab(
                 "site",
-                "风暴地",
-                "风暴地地点"));
+                "谷地",
+                "谷地地点"));
         tabList.add(new WikiTab(
                 "site",
                 "多恩",
                 "多恩地点"));
         tabList.add(new WikiTab(
                 "site",
+                "铁群岛",
+                "铁群岛地点"));
+        tabList.add(new WikiTab(
+                "site",
                 "塞外",
                 "塞外地点"));
+        tabList.add(new WikiTab(
+                "site",
+                "厄斯索斯",
+                "厄斯索斯地点"));
+        tabList.add(new WikiTab(
+                "site",
+                "索斯罗斯",
+                "索斯罗斯地点"));
     }
 
 }
