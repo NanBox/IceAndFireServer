@@ -75,8 +75,8 @@ public class WikiData {
                 "徒利家族"));
         tabList.add(new WikiTab(
                 "person",
-                "佛雷",
-                "佛雷家族"));
+                "弗雷",
+                "弗雷家族"));
         tabList.add(new WikiTab(
                 "person",
                 "提利尔",
